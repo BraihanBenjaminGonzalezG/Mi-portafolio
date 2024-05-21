@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#" style="font-family: 'MinecraftFont', sans-serif;">BBGG</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio" >
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="./assets/css/img/hero.jpg" alt="">
+            </div>
+            <h1>Braihan Gonzalez</h1>
+            <h2>Estudiante Ingeniero en Informatica</h2>
+            <div class="redes">
+                <a href="https://www.instagram.com/_benja333" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/braihan-benjamin-gonzalez-gutierrez-14a116292/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=+56975505169" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:benjalol2002xd@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+            <a href="https://github.com/BraihanBenjaminGonzalezG" target="_blank"><i class="fab fa-github"></i></a>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Benjamin Gonzalez.</span> Tengo 21 años, soy estudiante de informatica en la universidad Duoc UC, estoy cursando ya mi 3 semestre de carrera.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            30-08-2002
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +569 75505169
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            benjalol2002xd@gmail.com
+                        </li>
+                    
+                        <li>
+                            <strong>Dirección</strong>
+                            Puerto Montt, Ruta 7, KLM 45, Caleta La Arena
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Estudiante universitario</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button onclick="window.open('https://cvbbgg.my.canva.site/', '_blank')">
+                Ver CV 
+                <span class="overlay"></span>
+            </button>
+                     
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS O HABILIDADES -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>HABILIDADES</h2>
+            <div class="fila">
+                <!-- HABILIDADES TECNICAS -->
+                <div class="col">
+                    <h3>Habilidades Tecnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Gaming</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Servidores</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- HABILIDADES BLANDAS -->
+                <div class="col">
+                    <h3>Habilidades Blandas</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Puntualidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Cientifico Humanistico</h4>
+                        <span class="casa">LICEO DE HOMBRES MANUEL MONTT</span>
+                        <span class="fecha">2017 - 2020</span>
+                        <p>LICENCIA DE EDUCACIÓN MEDIA
+                            HUMANISTICO CIENTIFICA
+                            Certifico que según consta en el Registro Nº 48 del año 2020, don(ña)
+                            BRAIHAN BENJAMÍN GONZÁLEZ GUTIÉRREZ, RUN 21096319-7, aprobó
+                            la Educación Media en la modalidad HUMANISTICO CIENTIFICA, en el
+                            establecimiento educacional LICEO DE HOMBRES MANUEL MONTT,
+                            comuna de PUERTO MONTT, REGIÓN DE LOS LAGOS.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Curso Gastronomia</h4>
+                        <span class="casa">Escuela CURSODECOCINA</span>
+                        <span class="fecha">2022 - 2022</span>
+                        <p>Braihan Benjamin Gonzalez Gutierrez ha completado con exiro todas las ecciones requeridas del curso Gastronomia media que incluye clases practicas, videos tutoriales, recetas practicas, manipualacion de alimentos y test de aprendizaje.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingeniero de Montaña</h4>
+                        <span class="casa">DESTACAMENTO DE MONTAÑA N°9 «ARAUCO»</span>
+                        <span class="fecha">2021 - 2022</span>
+                        <p>La Compañía de Ingenieros Montaña N.º 12 "Tronador" certifica al Soldado Conscripto Primero Braihan Gonzalez haber terminado el servicio militar con exito.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Operario</h4>
+                        <span class="casa">Salmones Aysen</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Operario de ponton, en general me centraba en vigilar la jaulas de los salmone, mantener limpio, asegurar las jaulas de algun tipo de corte o desgaste, manipular carga tanto pesada como liviana que llegara para el funcionamiento general del ponton.  </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Garson y Cajero</h4>
+                        <span class="casa">El Boliche De Las Empanadas</span>
+                        <span class="fecha">2023 - 2023</span>
+                        <p>Principalmente estaba en la caja, pero hacia de todo en el lugar, tanto de atender mesas, cocinar, aseo, inventario,organizacion de papeles y externos.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO  O PROYECTOS -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h3 class="titulo-seccion">Mis Proyectos</h3>
+            <div class="fila" id="github-projects-list">
+                    
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+
+                <div class="col">
+                    <input type="text" id="nombre" placeholder="Tú Nombre">
+                    <span class="error" id="nombre-error"></span>
+                    <input type="text" id="telefono" placeholder="Número telefónico">
+                    <span class="error" id="telefono-error"></span>
+                    <input type="text" id="correo" placeholder="Dirección de correo">
+                    <span class="error" id="correo-error"></span>
+                    <input type="text" id="tema" placeholder="Tema">
+                    <span class="error" id="tema-error"></span>
+                    <textarea id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <span class="error" id="mensaje-error"></span>
+                    <button onclick="return validarFormulario();">
+                     Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>
+                </button>
+    <div id="mensaje-exito" style="display: none;">¡Mensaje enviado correctamente!</div>
+</div>
+
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="./assets/css/img/Ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Puerto Montt, Ruta 7, KLM 45, Caleta La Arena
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: +569 75505169 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: benjalol2002xdqgmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.instagram.com/_benja333" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/braihan-benjamin-gonzalez-gutierrez-14a116292/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=+56975505169" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:benjalol2002xd@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+            <a href="https://github.com/BraihanBenjaminGonzalezG" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/css/styles.csss"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+ 
+</body>
+</html>
